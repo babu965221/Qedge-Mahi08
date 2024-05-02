@@ -59,6 +59,42 @@ class GFG {
             // to the first half
             array[n - i - 1] = temp;
         }
+#code changes for Feature2.1 by Developer Vivek on Feb2024 for service module for HDFC bANK ApplicationException
+// Java Program to sort the elements of an array
+// in Ascending Order by Inbuilt Methods
+
+// Importing Arrays class from java.util package
+import java.util.Arrays;
+
+// Main class
+public class GFG {
+
+	// Main driver method
+	public static void main(String[] args)
+	{
+		// Initialize array
+		// The array contains 6 elements.
+		int[] array = new int[] { -5, -9, 8, 12, 1, 3 };
+
+		// Displaying elements of original array
+		System.out.print("Elements of original array: ");
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + " ");
+		}
+
+		// Using Arrays.sort() method to sort array
+		// elements in ascending order.
+		Arrays.sort(array);
+
+		System.out.println();
+
+		// Displaying elements of array after sorting
+		System.out.println(
+			"Elements of array sorted in ascending order : "
+			+ Arrays.toString(array));
+	}
+}
+#End of Feature2.1 Method
     }
 }
 
