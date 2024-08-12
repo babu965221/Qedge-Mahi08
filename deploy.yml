@@ -1,0 +1,11 @@
+ - name: Deploy Application
+     hosts: localhost
+     tasks:
+       - name: Run Docker Container
+         docker_container:
+           name: mahesh
+           image: nginx:latest
+           state: started
+           ports:
+             - "80:80"
+
